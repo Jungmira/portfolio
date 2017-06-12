@@ -1,0 +1,199 @@
+@import url('http://fonts.googleapis.com/earlyaccess/notosanskr.css');
+/* line 1, assets\less\mixin.less */
+h1 {
+  border: 1px#F00 solid;
+}
+/* line 1, assets\less\common.less */
+body {
+  border: 1px#F00 solid;
+}
+/* line 2, assets\less\style.less */
+html {
+  font-size: 100%;
+  background: url('../images/homebg1.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+/* line 10, assets\less\style.less */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* line 12, assets\less\style.less */
+body {
+  width: 100%;
+  height: 9000px;
+  font-family: 'Noto Sans KR', Sans-serif, Helvetica;
+}
+/* line 17, assets\less\style.less */
+ul,
+ol,
+li {
+  list-style: none;
+}
+/* line 20, assets\less\style.less */
+a {
+  text-decoration: none;
+}
+/* line 22, assets\less\style.less */
+.cfixed:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+/* line 27, assets\less\style.less */
+.wrapper {
+  max-width: 1920px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+/* line 33, assets\less\style.less */
+.wrapper .wrap {
+  height: 100%;
+  z-index: 999;
+}
+/* line 39, assets\less\style.less */
+.wrapper .wrap header {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  height: 150px;
+}
+/* line 45, assets\less\style.less */
+.wrapper .wrap header .logo {
+  position: relative;
+  font-size: 80px;
+  line-height: 80px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 51, assets\less\style.less */
+.wrapper .wrap header .logo a {
+  color: #fff;
+}
+/* line 55, assets\less\style.less */
+.wrapper .wrap header nav {
+  margin: 0 auto;
+  width: 79.16%;
+  height: 45px;
+}
+/* line 59, assets\less\style.less */
+.wrapper .wrap header nav ul {
+  margin-top: 4px;
+}
+/* line 61, assets\less\style.less */
+.wrapper .wrap header nav ul li {
+  float: left;
+  width: 16.5%;
+  font-size: 26px;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 69, assets\less\style.less */
+.wrapper .wrap header nav ul li a {
+  color: #fff;
+}
+/* line 76, assets\less\style.less */
+.wrapper .wrap header .menu-toggle-btn {
+  display: none;
+}
+/* line 82, assets\less\style.less */
+#set1 {
+  width: 100%;
+  padding-top: 185px;
+  position: relative;
+}
+/* line 86, assets\less\style.less */
+#set1 .slide {
+  width: 36%;
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+/* line 92, assets\less\style.less */
+#set1 .slide ul {
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  overflow: hidden;
+}
+/* line 97, assets\less\style.less */
+#set1 .slide ul li {
+  display: inline-block;
+}
+/* line 99, assets\less\style.less */
+#set1 .slide ul li img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
+  display: none;
+}
+/* line 107, assets\less\style.less */
+#set1 .slide ul li a {
+  position: relative;
+  top: 100px;
+  background: #fff;
+  z-index: 1;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+/* line 118, assets\less\style.less */
+#set1 .slide ul li:first-child img {
+  display: block;
+}
+/* line 124, assets\less\style.less */
+#set1 button {
+  position: absolute;
+  top: 0;
+}
+/* line 129, assets\less\style.less */
+#set1 .next {
+  right: 0;
+  top: 50%;
+}
+/* line 133, assets\less\style.less */
+#set1 .prev {
+  left: 0;
+  top: 50%;
+}
+/* line 136, assets\less\style.less */
+#set2 {
+  width: 79.16666666%;
+  margin: 0 auto;
+}
+/* line 140, assets\less\style.less */
+#set2 .bestmenu span {
+  font-size: 20px;
+  color: #fff;
+}
+/* line 144, assets\less\style.less */
+#set2 .bestmenu ul {
+  width: 100%;
+}
+/* line 146, assets\less\style.less */
+#set2 .bestmenu ul li {
+  float: left;
+  width: 33.3333333%;
+  height: 400px;
+}
+/* line 150, assets\less\style.less */
+#set2 .bestmenu ul li img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1600px) {
+  /* line 160, assets\less\style.less */
+  html {
+    font-size: 83.3333%;
+  }
+}
+@media (max-width: 768px) {
+  /* line 163, assets\less\style.less */
+  html {
+    font-size: 40%;
+  }
+}

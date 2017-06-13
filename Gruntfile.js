@@ -11,20 +11,18 @@ module.exports = function(grunt) {
     less: {
       min: {
         options: {
-          paths: ['assets/css'],
           compress:true
         },
         files: {
-          'assets/css/style.less': 'assets/less/import.less'
+          'assets/css/style.css': 'assets/less/import.less'
         }
       },
       dev: {
         options: {
-          paths: ['assets/css'],
           dumpLineNumbers:"comments"
         },
         files: {
-          'assets/css/style.dev.less': 'assets/less/import.less'
+          'assets/css/style.dev.css': 'assets/less/import.less'
         }
       }
     },

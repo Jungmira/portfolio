@@ -13,7 +13,7 @@ html {
 /* line 14, assets\less\style.less */
 body {
   width: 100%;
-  height: 9000px;
+  height: auto;
   font-family: 'Noto Sans KR', Sans-serif, Helvetica;
 }
 /* line 19, assets\less\style.less */
@@ -55,27 +55,28 @@ a {
 /* line 45, assets\less\style.less */
 .wrapper .wrap header .logo {
   position: relative;
-  font-size: 80px;
-  line-height: 80px;
+  font-size: 60px;
+  line-height: 60px;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
-/* line 51, assets\less\style.less */
+/* line 52, assets\less\style.less */
 .wrapper .wrap header .logo a {
   color: #fff;
 }
-/* line 55, assets\less\style.less */
+/* line 56, assets\less\style.less */
 .wrapper .wrap header nav {
   margin: 0 auto;
   width: 79.16666666%;
   height: 45px;
 }
-/* line 59, assets\less\style.less */
+/* line 60, assets\less\style.less */
 .wrapper .wrap header nav ul {
   margin-top: 4px;
 }
-/* line 61, assets\less\style.less */
-.wrapper .wrap header nav ul li {
+/* line 62, assets\less\style.less */
+.wrapper .wrap header nav ul > li {
   float: left;
   width: 16.5%;
   font-size: 26px;
@@ -83,31 +84,37 @@ a {
   text-transform: uppercase;
   text-align: center;
 }
-/* line 69, assets\less\style.less */
-.wrapper .wrap header nav ul li a {
+/* line 72, assets\less\style.less */
+.wrapper .wrap header nav ul > li .menuslide > li {
+  display: inline-block;
+  background: #000;
+  width: 80px;
+}
+/* line 78, assets\less\style.less */
+.wrapper .wrap header nav ul > li a {
   color: #fff;
 }
-/* line 76, assets\less\style.less */
+/* line 86, assets\less\style.less */
 .wrapper .wrap header .menu-toggle-btn {
   display: none;
 }
-/* line 82, assets\less\style.less */
+/* line 92, assets\less\style.less */
 section {
   width: 79.16666666%;
   margin: 0 auto;
 }
-/* line 85, assets\less\style.less */
+/* line 95, assets\less\style.less */
 section h2 {
   font-size: 50px;
   color: #fff;
 }
-/* line 90, assets\less\style.less */
+/* line 100, assets\less\style.less */
 #set1 {
   width: 100%;
   padding-top: 185px;
   position: relative;
 }
-/* line 94, assets\less\style.less */
+/* line 104, assets\less\style.less */
 #set1 .slide {
   width: 36%;
   height: 400px;
@@ -115,18 +122,18 @@ section h2 {
   position: relative;
   overflow: hidden;
 }
-/* line 100, assets\less\style.less */
+/* line 110, assets\less\style.less */
 #set1 .slide ul {
   width: 100%;
   height: 400px;
   text-align: center;
   overflow: hidden;
 }
-/* line 105, assets\less\style.less */
+/* line 115, assets\less\style.less */
 #set1 .slide ul li {
   display: inline-block;
 }
-/* line 107, assets\less\style.less */
+/* line 117, assets\less\style.less */
 #set1 .slide ul li img {
   position: absolute;
   left: 0;
@@ -134,7 +141,7 @@ section h2 {
   top: 0;
   display: none;
 }
-/* line 114, assets\less\style.less */
+/* line 124, assets\less\style.less */
 #set1 .slide ul li a {
   position: relative;
   top: 350px;
@@ -144,58 +151,67 @@ section h2 {
   width: 20px;
   height: 20px;
 }
-/* line 124, assets\less\style.less */
+/* line 134, assets\less\style.less */
 #set1 .slide ul li:first-child img {
   display: block;
 }
-/* line 129, assets\less\style.less */
+/* line 139, assets\less\style.less */
 #set1 button {
   position: absolute;
   top: 0;
   background: rgba(225, 225, 225, 0);
   border: 0;
 }
-/* line 135, assets\less\style.less */
+/* line 145, assets\less\style.less */
 #set1 .next {
   right: 0;
   top: 50%;
 }
-/* line 139, assets\less\style.less */
+/* line 149, assets\less\style.less */
 #set1 .prev {
   left: 0;
   top: 50%;
 }
-/* line 145, assets\less\style.less */
+/* line 155, assets\less\style.less */
 #set2 .bestmenu ul {
   width: 80%;
   margin: 0 auto;
 }
-/* line 148, assets\less\style.less */
+/* line 158, assets\less\style.less */
 #set2 .bestmenu ul li {
   float: left;
   width: 30%;
   height: 300px;
+  background-color: #fff;
+  overflow: hidden;
+  text-align: center;
 }
-/* line 152, assets\less\style.less */
-#set2 .bestmenu ul li img {
+/* line 165, assets\less\style.less */
+#set2 .bestmenu ul li a {
+  display: inline-block;
   width: 100%;
   height: 100%;
 }
-/* line 157, assets\less\style.less */
+/* line 170, assets\less\style.less */
+#set2 .bestmenu ul li a img {
+  height: 100%;
+}
+/* line 176, assets\less\style.less */
 #set2 .bestmenu ul li:nth-child(2) {
   margin: 0 5%;
 }
-/* line 165, assets\less\style.less */
+/* line 184, assets\less\style.less */
 #set3 .tastelist {
   width: 60%;
   position: relative;
   margin: 0 auto;
+  height: 400px;
 }
-/* line 169, assets\less\style.less */
+/* line 189, assets\less\style.less */
 #set3 .tastelist a {
   color: #fff;
 }
-/* line 172, assets\less\style.less */
+/* line 192, assets\less\style.less */
 #set3 .tastelist > li {
   background: green;
   font-size: 35px;
@@ -205,7 +221,7 @@ section h2 {
   line-height: 80px;
   background: #000000;
 }
-/* line 183, assets\less\style.less */
+/* line 203, assets\less\style.less */
 #set3 .tastelist > li .taste {
   position: absolute;
   top: 0;
@@ -213,7 +229,7 @@ section h2 {
   width: 70%;
   height: 400px;
 }
-/* line 189, assets\less\style.less */
+/* line 209, assets\less\style.less */
 #set3 .tastelist > li .taste li img {
   position: absolute;
   left: 0;
@@ -221,19 +237,37 @@ section h2 {
   width: 100%;
   height: 100%;
 }
-/* line 200, assets\less\style.less */
-#set4 iframe {
+/* line 222, assets\less\style.less */
+#set4 .location {
+  width: 60%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* line 226, assets\less\style.less */
+#set4 .location iframe {
   width: 100%;
   height: 300px;
 }
+/* line 232, assets\less\style.less */
+footer {
+  width: 20%;
+  margin: 0 auto;
+  height: 300px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+/* line 238, assets\less\style.less */
+footer .address {
+  background: #fff;
+}
 @media (max-width: 1600px) {
-  /* line 205, assets\less\style.less */
+  /* line 244, assets\less\style.less */
   html {
     font-size: 83.3333%;
   }
 }
 @media (max-width: 768px) {
-  /* line 208, assets\less\style.less */
+  /* line 247, assets\less\style.less */
   html {
     font-size: 40%;
   }

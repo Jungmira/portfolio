@@ -13,7 +13,7 @@ html {
 padding:0;}
 body{
   width:100%;
-  height:9000px;
+  height:auto;
   font-family:'Noto Sans KR',Sans-serif,Helvetica;
 }
 ul,ol,li{
@@ -44,10 +44,11 @@ a{text-decoration:none;
     height:150px;
     .logo{
       position:relative;
-      font-size: 80px;
-      line-height:80px;
+      font-size: 60px;
+      line-height:60px;
       text-align: center;
       text-transform: uppercase;
+      margin-bottom:20px;
       a{
         color:#fff;
       }
@@ -58,7 +59,7 @@ a{text-decoration:none;
       height:45px;
       ul{
         margin-top:4px;
-        li{
+        >li{
           float:left;
           width:16.5%;
           font-size:26px;
@@ -66,10 +67,19 @@ a{text-decoration:none;
           border: 1px solid #fff;
           text-transform: uppercase;
           text-align:center;
+          .menuslide{
+
+            >li{
+              display:inline-block;
+              background:#000;
+              width:80px;
+            }
+          }
           a{
             color:#fff;
           }
         }
+
       }
 
     }
@@ -149,9 +159,18 @@ section{
         float:left;
         width:30%;
         height:300px;
-        img{
+        background-color:#fff;
+        overflow:hidden;
+        text-align:center;
+        a{
+          display:inline-block;
           width:100%;
           height:100%;
+
+        img{
+        height:100%;
+        }
+
         }
     }
     li:nth-child(2){
@@ -166,6 +185,7 @@ section{
     width:60%;
     position:relative;
     margin:0 auto;
+    height:400px;
     a{
       color:#fff;
     }
@@ -197,13 +217,28 @@ section{
     }
   }
 }
-#set3 >ul >ul{}
 #set4{
-  margin-top:50px;
+
+  .location{
+    width:60%;
+    margin:0 auto;
+    overflow: hidden;
   iframe{
   width:100%;
   height:300px;
+    }
+  }
+}
+footer{
+  width:20%;
+  margin:0 auto;
+  height:300px;
+  margin-top:50px;
+  margin-bottom:100px;
+  .address{
+    background:#fff;
 
+  }
 }
 @media (max-width:1600px){
   html { font-size:83.3333%; }

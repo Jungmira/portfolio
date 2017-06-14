@@ -1,0 +1,203 @@
+/* 웹폰트 CSS */
+@import url('http://fonts.googleapis.com/earlyaccess/notosanskr.css');
+html {
+  font-size: 100%;
+  background: url('../images/homebg1.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 9000px;
+  font-family: 'Noto Sans KR', Sans-serif, Helvetica;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.cfixed:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.wrapper {
+  max-width: 1920px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.5);
+}
+.wrapper .wrap {
+  height: 100%;
+  z-index: 999;
+}
+.wrapper .wrap header {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  height: 150px;
+}
+.wrapper .wrap header .logo {
+  position: relative;
+  font-size: 80px;
+  line-height: 80px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.wrapper .wrap header .logo a {
+  color: #fff;
+}
+.wrapper .wrap header nav {
+  margin: 0 auto;
+  width: 79.16666666%;
+  height: 45px;
+}
+.wrapper .wrap header nav ul {
+  margin-top: 4px;
+}
+.wrapper .wrap header nav ul li {
+  float: left;
+  width: 16.5%;
+  font-size: 26px;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.wrapper .wrap header nav ul li a {
+  color: #fff;
+}
+.wrapper .wrap header .menu-toggle-btn {
+  display: none;
+}
+section {
+  width: 79.16666666%;
+  margin: 0 auto;
+}
+section h2 {
+  font-size: 50px;
+  color: #fff;
+}
+#set1 {
+  width: 100%;
+  padding-top: 185px;
+  position: relative;
+}
+#set1 .slide {
+  width: 36%;
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+#set1 .slide ul {
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  overflow: hidden;
+}
+#set1 .slide ul li {
+  display: inline-block;
+}
+#set1 .slide ul li img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
+  display: none;
+}
+#set1 .slide ul li a {
+  position: relative;
+  top: 350px;
+  background: #fff;
+  z-index: 1;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+#set1 .slide ul li:first-child img {
+  display: block;
+}
+#set1 button {
+  position: absolute;
+  top: 0;
+  background: rgba(225, 225, 225, 0);
+  border: 0;
+}
+#set1 .next {
+  right: 0;
+  top: 50%;
+}
+#set1 .prev {
+  left: 0;
+  top: 50%;
+}
+#set2 .bestmenu ul {
+  width: 80%;
+  margin: 0 auto;
+}
+#set2 .bestmenu ul li {
+  float: left;
+  width: 30%;
+  height: 300px;
+}
+#set2 .bestmenu ul li img {
+  width: 100%;
+  height: 100%;
+}
+#set2 .bestmenu ul li:nth-child(2) {
+  margin: 0 5%;
+}
+#set3 .tastelist {
+  width: 60%;
+  position: relative;
+  margin: 0 auto;
+  height: 400px;
+}
+#set3 .tastelist a {
+  color: #fff;
+}
+#set3 .tastelist > li {
+  background: green;
+  font-size: 35px;
+  text-align: center;
+  width: 30%;
+  height: 80px;
+  line-height: 80px;
+  background: #000000;
+}
+#set3 .tastelist > li .taste {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  width: 70%;
+  height: 400px;
+}
+#set3 .tastelist > li .taste li img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+#set4 .location .mapiframe {
+  width: 60%;
+  height: 300px;
+  margin: 0 auto;
+}
+@media (max-width: 1600px) {
+  html {
+    font-size: 83.3333%;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 40%;
+  }
+}

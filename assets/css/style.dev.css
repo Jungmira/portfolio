@@ -5,34 +5,34 @@ html {
   background: url('../images/homebg1.jpg') no-repeat center center fixed;
   background-size: cover;
 }
-/* line 12, assets\less\style.less */
+/* line 8, assets\less\style.less */
 * {
   margin: 0;
   padding: 0;
 }
-/* line 14, assets\less\style.less */
+/* line 11, assets\less\style.less */
 body {
   width: 100%;
   height: auto;
   font-family: 'Noto Sans KR', Sans-serif, Helvetica;
 }
-/* line 19, assets\less\style.less */
+/* line 16, assets\less\style.less */
 ul,
 ol,
 li {
   list-style: none;
 }
-/* line 22, assets\less\style.less */
+/* line 19, assets\less\style.less */
 a {
   text-decoration: none;
 }
-/* line 24, assets\less\style.less */
+/* line 21, assets\less\style.less */
 .cfixed:after {
   display: block;
   content: "";
   clear: both;
 }
-/* line 29, assets\less\style.less */
+/* line 26, assets\less\style.less */
 .wrapper {
   max-width: 1920px;
   width: 100%;
@@ -40,19 +40,19 @@ a {
   margin: 0 auto;
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 35, assets\less\style.less */
+/* line 32, assets\less\style.less */
 .wrapper .wrap {
   height: 100%;
   z-index: 999;
 }
-/* line 40, assets\less\style.less */
+/* line 37, assets\less\style.less */
 .wrapper .wrap header {
   position: fixed;
   width: 100%;
   z-index: 99;
   height: 150px;
 }
-/* line 45, assets\less\style.less */
+/* line 42, assets\less\style.less */
 .wrapper .wrap header .logo {
   position: relative;
   font-size: 60px;
@@ -60,61 +60,86 @@ a {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
+  text-shadow: -10px 8px 15px #000000;
 }
-/* line 52, assets\less\style.less */
+/* line 50, assets\less\style.less */
 .wrapper .wrap header .logo a {
   color: #fff;
 }
-/* line 56, assets\less\style.less */
+/* line 53, assets\less\style.less */
+.wrapper .wrap header .logo a:hover {
+  color: yellow;
+  text-shadow: 0 0 15px #ffff00;
+}
+/* line 59, assets\less\style.less */
 .wrapper .wrap header nav {
   margin: 0 auto;
   width: 79.16666666%;
   height: 45px;
 }
-/* line 60, assets\less\style.less */
-.wrapper .wrap header nav ul {
+/* line 63, assets\less\style.less */
+.wrapper .wrap header nav > ul {
   margin-top: 4px;
 }
-/* line 62, assets\less\style.less */
-.wrapper .wrap header nav ul > li {
+/* line 65, assets\less\style.less */
+.wrapper .wrap header nav > ul > li {
   float: left;
   width: 16.5%;
   font-size: 26px;
+  line-height: 26px;
   border: 1px solid #fff;
   text-transform: uppercase;
   text-align: center;
 }
-/* line 72, assets\less\style.less */
-.wrapper .wrap header nav ul > li .menuslide > li {
-  display: inline-block;
-  background: #000;
-  width: 80px;
-}
-/* line 78, assets\less\style.less */
-.wrapper .wrap header nav ul > li a {
+/* line 75, assets\less\style.less */
+.wrapper .wrap header nav > ul > li a {
   color: #fff;
+  padding-top: 20px;
+}
+/* line 80, assets\less\style.less */
+.wrapper .wrap header nav > ul > li:hover {
+  padding-bottom: 20px;
+}
+/* line 84, assets\less\style.less */
+.wrapper .wrap header nav > ul li:hover ul {
+  display: block;
 }
 /* line 86, assets\less\style.less */
+.wrapper .wrap header nav > ul li:hover > a {
+  color: yellow;
+  text-shadow: 0 0 15px #ffff00;
+  transition: all 1000ms;
+}
+/* line 91, assets\less\style.less */
+.wrapper .wrap header nav > ul ul {
+  display: none;
+}
+/* line 93, assets\less\style.less */
+.wrapper .wrap header nav > ul ul box-shadow:0 0 15px rgba(0,0,0,.5) li {
+  width: auto;
+  height: auto;
+}
+/* line 103, assets\less\style.less */
 .wrapper .wrap header .menu-toggle-btn {
   display: none;
 }
-/* line 92, assets\less\style.less */
+/* line 109, assets\less\style.less */
 section {
   width: 79.16666666%;
   margin: 0 auto;
 }
-/* line 95, assets\less\style.less */
+/* line 112, assets\less\style.less */
 section h2 {
   font-size: 50px;
   color: #fff;
 }
-/* line 100, assets\less\style.less */
+/* line 117, assets\less\style.less */
 #set1 {
   width: 100%;
   padding-top: 185px;
   position: relative;
 }
-/* line 104, assets\less\style.less */
+/* line 121, assets\less\style.less */
 #set1 .slide {
   width: 36%;
   height: 400px;
@@ -122,18 +147,18 @@ section h2 {
   position: relative;
   overflow: hidden;
 }
-/* line 110, assets\less\style.less */
+/* line 127, assets\less\style.less */
 #set1 .slide ul {
   width: 100%;
   height: 400px;
   text-align: center;
   overflow: hidden;
 }
-/* line 115, assets\less\style.less */
+/* line 132, assets\less\style.less */
 #set1 .slide ul li {
   display: inline-block;
 }
-/* line 117, assets\less\style.less */
+/* line 134, assets\less\style.less */
 #set1 .slide ul li img {
   position: absolute;
   left: 0;
@@ -141,43 +166,48 @@ section h2 {
   top: 0;
   display: none;
 }
-/* line 124, assets\less\style.less */
+/* line 141, assets\less\style.less */
 #set1 .slide ul li a {
   position: relative;
   top: 350px;
-  background: #fff;
   z-index: 1;
   display: block;
   width: 20px;
   height: 20px;
 }
-/* line 134, assets\less\style.less */
+/* line 149, assets\less\style.less */
+#set1 .slide ul li a i {
+  color: black;
+}
+/* line 154, assets\less\style.less */
 #set1 .slide ul li:first-child img {
   display: block;
 }
-/* line 139, assets\less\style.less */
+/* line 159, assets\less\style.less */
 #set1 button {
   position: absolute;
   top: 0;
   background: rgba(225, 225, 225, 0);
   border: 0;
 }
-/* line 145, assets\less\style.less */
-#set1 .next {
-  right: 0;
-  top: 50%;
-}
-/* line 149, assets\less\style.less */
+/* line 165, assets\less\style.less */
 #set1 .prev {
   left: 0;
   top: 50%;
+  margin-left: 20px;
 }
-/* line 155, assets\less\style.less */
+/* line 170, assets\less\style.less */
+#set1 .next {
+  right: 0;
+  top: 50%;
+  margin-right: 20px;
+}
+/* line 180, assets\less\style.less */
 #set2 .bestmenu ul {
   width: 80%;
   margin: 0 auto;
 }
-/* line 158, assets\less\style.less */
+/* line 183, assets\less\style.less */
 #set2 .bestmenu ul li {
   float: left;
   width: 30%;
@@ -186,32 +216,32 @@ section h2 {
   overflow: hidden;
   text-align: center;
 }
-/* line 165, assets\less\style.less */
+/* line 190, assets\less\style.less */
 #set2 .bestmenu ul li a {
   display: inline-block;
   width: 100%;
   height: 100%;
 }
-/* line 170, assets\less\style.less */
+/* line 195, assets\less\style.less */
 #set2 .bestmenu ul li a img {
   height: 100%;
 }
-/* line 176, assets\less\style.less */
+/* line 201, assets\less\style.less */
 #set2 .bestmenu ul li:nth-child(2) {
   margin: 0 5%;
 }
-/* line 184, assets\less\style.less */
+/* line 209, assets\less\style.less */
 #set3 .tastelist {
   width: 60%;
   position: relative;
   margin: 0 auto;
   height: 400px;
 }
-/* line 189, assets\less\style.less */
+/* line 214, assets\less\style.less */
 #set3 .tastelist a {
   color: #fff;
 }
-/* line 192, assets\less\style.less */
+/* line 217, assets\less\style.less */
 #set3 .tastelist > li {
   background: green;
   font-size: 35px;
@@ -221,7 +251,7 @@ section h2 {
   line-height: 80px;
   background: #000000;
 }
-/* line 203, assets\less\style.less */
+/* line 228, assets\less\style.less */
 #set3 .tastelist > li .taste {
   position: absolute;
   top: 0;
@@ -229,7 +259,7 @@ section h2 {
   width: 70%;
   height: 400px;
 }
-/* line 209, assets\less\style.less */
+/* line 234, assets\less\style.less */
 #set3 .tastelist > li .taste li img {
   position: absolute;
   left: 0;
@@ -237,18 +267,18 @@ section h2 {
   width: 100%;
   height: 100%;
 }
-/* line 222, assets\less\style.less */
+/* line 247, assets\less\style.less */
 #set4 .location {
   width: 60%;
   margin: 0 auto;
   overflow: hidden;
 }
-/* line 226, assets\less\style.less */
+/* line 251, assets\less\style.less */
 #set4 .location iframe {
   width: 100%;
   height: 300px;
 }
-/* line 232, assets\less\style.less */
+/* line 257, assets\less\style.less */
 footer {
   width: 20%;
   margin: 0 auto;
@@ -256,18 +286,18 @@ footer {
   margin-top: 50px;
   margin-bottom: 100px;
 }
-/* line 238, assets\less\style.less */
+/* line 263, assets\less\style.less */
 footer .address {
   background: #fff;
 }
 @media (max-width: 1600px) {
-  /* line 244, assets\less\style.less */
+  /* line 269, assets\less\style.less */
   html {
     font-size: 83.3333%;
   }
 }
 @media (max-width: 768px) {
-  /* line 247, assets\less\style.less */
+  /* line 272, assets\less\style.less */
   html {
     font-size: 40%;
   }

@@ -5,8 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>googleap</title>
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+    <!-- <link rel="stylesheet" href="assets/css/style.css" type="text/css"/> -->
+    <link rel="stylesheet" href="assets/less/cakemood.css" type="text/css"/>
+
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/index.js"></script>
+
 
 
 </head>
@@ -41,10 +46,14 @@
             <span></span>
             <span></span>
           </span>
-
       </header>
+      <section id="set0">
+        <div class="doorimg">
+          <div class="door left"><img src="assets/images/door_left.jpg" alt=""></div>
+          <div class="door right"><img src="assets/images/door_right.jpg" alt=""></div>
+        </div>
+      </section>
       <section id=set1>
-
       <div class="slide">
         <ul>
           <li>
@@ -53,11 +62,11 @@
           </li>
           <li>
             <a href="javascipt:void(0)"><i class="fa fa-square-o" aria-hidden="true"></i></a>
-            <img src="assets/images/2.jpg" alt="매장사진">
+            <img src="assets/images/round2.jpg" alt="매장사진">
           </li>
           <li>
             <a href="javascipt:void(0)"><i class="fa fa-square-o" aria-hidden="true"></i></a>
-            <img src="assets/images/3.jpg" alt="재료">
+            <img src="assets/images/tart1.jpg" alt="재료">
           </li>
         </ul>
         <button class="prev"><i class="fa fa-caret-square-o-left fa-2x" aria-hidden="true"></i></button>
@@ -71,7 +80,12 @@
         <div class="bestmenu">
           <h2>best menu</h2>
           <ul class="cfixed">
-            <li><a href=""><img src="assets/images/square_rasmus.png" alt=""></a></li>
+            <li>
+              <a href=""><img src="assets/images/square_rasmus.png" alt=""></a>
+              <span><i>네모난 산딸기무스</i><i>price : 8000won</i></span>
+              <button>details</button>
+
+            </li>
             <li><a href=""><img src="assets/images/tart1.jpg" alt=""></a></li>
             <li><a href=""><img src="assets/images/cupcake_pista.png" alt=" "></a></li>
           </ul>
@@ -85,14 +99,21 @@
             <div class="taste">
               <ul>
                 <li>
-                  <a href=""><img src="assets/images/tart1.jpg" alt=""></a>
-                  <div></div>
+                  <a href=""><img src="assets/images/tart_manyfruit.png" alt=""></a>
+                  <div class="hidetext">
+                    <h3>치즈랑 딸기랑 블루랑</h3>
+                    <span>가격-30000won</span>
+                    <span>들어가는 재료-산딸기,블루베리,프랑스산크림치즈,계란,밀가루,요거트,설탕,전분,버터</span>
+                    <span>칼로리</span>
+                  </div>
                 </li>
       					<li><a href=""><img src="assets/images/cupcake_abbit.jpg" alt=""></a></li>
       					<li><a href=""><img src="assets/images/piece1.jpg" alt=""></a></li>
       					<li><a href=""><img src="assets/images/2.png" alt=""></a></li>
       					<li><a href=""><img src="assets/images/1.png" alt=""></a></li>
               </ul>
+              <button class="set3prev"><i class="fa fa-caret-square-o-left fa-2x" aria-hidden="true"></i></button>
+              <button class="set3next"><i class="fa fa-caret-square-o-right fa-2x" aria-hidden="true"></i></button>
             </div>
             </li>
           <li><a href="">chocolate</a>
@@ -104,6 +125,8 @@
               <li><a href=""><img src="assets/images/2.png" alt=""></a></li>
               <li><a href=""><img src="assets/images/1.png" alt=""></a></li>
               </ul>
+              <button class="set3prev"><i class="fa fa-caret-square-o-left fa-2x" aria-hidden="true"></i></button>
+              <button class="set3next"><i class="fa fa-caret-square-o-right fa-2x" aria-hidden="true"></i></button>
             </div>
           </li>
           <li><a href="">whipped cream</a>
@@ -115,6 +138,8 @@
       					<li><a href=""><img src="assets/images/2.png" alt=""></a></li>
       					<li><a href=""><img src="assets/images/1.png" alt=""></a></li>
               </ul>
+              <button class="set3prev"><i class="fa fa-caret-square-o-left fa-2x" aria-hidden="true"></i></button>
+              <button class="set3next"><i class="fa fa-caret-square-o-right fa-2x" aria-hidden="true"></i></button>
             </div>
           </li>
           <li><a href="">cheese</a>
@@ -126,8 +151,12 @@
       					<li><a href=""><img src="assets/images/2.png" alt=""></a></li>
       					<li><a href=""><img src="assets/images/1.png" alt=""></a></li>
               </ul>
+              <button class="set3prev"><i class="fa fa-caret-square-o-left fa-2x" aria-hidden="true"></i></button>
+              <button class="set3next"><i class="fa fa-caret-square-o-right fa-2x" aria-hidden="true"></i></button>
             </div>
           </li>
+        </ul>
+
       </div>
     </section>
     <section id="set4">
@@ -144,6 +173,7 @@
         <span>tel - 2791-9967</span>
         <span>open 10:00<br /></span>
       </div>
+
     </footer>
     </div>
   </div>

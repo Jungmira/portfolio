@@ -26,6 +26,15 @@ a {
   content: "";
   clear: both;
 }
+.wrapper {
+  max-width: 1920px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.wrapper .wrap {
+  height: 100%;
+}
 header {
   position: fixed;
   width: 100%;
@@ -103,16 +112,8 @@ header nav > ul ul li {
 header .menu-toggle-btn {
   display: none;
 }
-section {
-  width: 79.16666666%;
-  margin: 0 auto;
-  height: auto;
-}
-section h2 {
-  font-size: 50px;
-  color: #fff;
-}
 #set0 {
+  width: 79.16666666%;
   z-index: 0;
   position: relative;
   width: 396px;
@@ -144,30 +145,77 @@ section h2 {
 }
 #set0:hover {
   display: block;
-}
-#set1 {
-  width: 79.16666666%;
-  border: 1px solid red;
+  width: 100%;
   height: 1080px;
-  background: url('../images/womans.jpg') center no-repeat fixed;
-  background-size: 100% 70%;
+}
+section {
   position: relative;
+  height: 1080px;
+  width: 100%;
+}
+section .bgimage {
+  width: 79.16666666%;
+  height: 100%;
+  margin: 0 auto;
+}
+section .textbox {
+  width: 100%;
+  height: 300px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+}
+section h2 {
+  width: 80%;
+  position: relative;
+  bottom: 300px;
+  color: #ddd;
+}
+section h2:before {
+  content: "";
+  display: inline-block;
+  width: 300px;
+  height: 2px;
+  background: #ddd;
+  vertical-align: middle;
+}
+section p {
+  position: relative;
+  right: -50%;
+  color: #222;
+}
+#set1 .bgimage {
+  background: url('../images/womans.jpg') center no-repeat fixed;
 }
 #set1 .textbox {
   width: 100%;
-  height: 500px;
+  height: 300px;
   background: #fff;
+  position: absolute;
+  bottom: 0;
 }
-#set2 {
+#set2 .bgimage {
+  background: url('../images/untitled-1.jpg') center no-repeat fixed;
+}
+#set3 .bgimage {
+  background: url('../images/womans.jpg') center no-repeat fixed;
+}
+#set4 .bgimage {
   background: url('../images/cupcake_rabbit.jpg') center no-repeat fixed;
-  width: 100%;
-  height: 1080px;
 }
-section .bgimgbox {
-  padding-top: 500px;
-}
-section .bgimgbox .textbox {
+#set4 .mapiframe iframe {
   width: 100%;
-  height: 200px;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+}
+footer {
+  width: 20%;
+  margin: 0 auto;
+  height: 300px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+footer .address {
   background: #fff;
 }

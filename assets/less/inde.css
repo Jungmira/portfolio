@@ -360,8 +360,7 @@ section h2 {
 }
 #set4 .location iframe {
   width: 100%;
-  position: absolute;
-  bottom: 0;
+  height: 300px;
 }
 footer {
   width: 20%;

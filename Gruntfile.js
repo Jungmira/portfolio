@@ -35,6 +35,17 @@ module.exports = function(grunt) {
         },
       },
     },
+    includes: {
+      dist:{
+        cwd:'src/views',
+        src:['**/*.html'],
+        dest:'dist/views',
+        options:{
+        flatten:true,
+        includePath:'src/views/includes/'
+      }
+    }
+  },
   });
 
   // Load the plugin that provides the "uglify" task.
@@ -43,5 +54,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   // Default task(s).
   grunt.registerTask('default', ['serve']);
+  grunt.loadNpmTasks('grunt-includes');
 
 };

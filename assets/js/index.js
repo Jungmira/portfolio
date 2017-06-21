@@ -56,45 +56,45 @@ $(function(){
     }
   });
   //set3 allmenu
-  var set3Idx = 0;
-  function set3slide(start,end,idx){
-    $('.taste li').eq(set3Idx).children('img').css({
-      'display':'block',
-      'left':start
-    }).animate({
-      'left':end
-    })
-  };
-  function slidefunc(start,end,idx){
-    $('.taste li').eq(idx).addClass('on').children('img').css({
-      'display':'block',
-      'left':start
-    }).animate({
-      'left':end
-    }).parent().siblings().removeClass('on')
-  };
-  $('.taste .set3next').on({
-    'click':function(){
-      set3slide('0','-100%',set3Idx)
-      set3Idx ++
-      set3slide('100%',0,set3Idx)
-      if(set3Idx == $('.slide li').length){
-        set3Idx = 0
-        slidefunc('100%','0',set3Idx)
-      }
-    }
-  });
-  $('.taste .set3prev').on({
-    'click':function(){
-      slidefunc('0','100%',set3Idx)
-      set3Idx --
-      slidefunc('-100%','0',set3Idx)
-      if(set3Idx < 0){
-        set3Idx = $('.slidebanner li').length -1
-        slidefunc('-100%','0',set3Idx)
-      }
-    }
-  });
+  // var set3Idx = 0;
+  // function set3slide(start,end,idx){
+  //   $('.taste li').eq(set3Idx).children('img').css({
+  //     'display':'block',
+  //     'left':start
+  //   }).animate({
+  //     'left':end
+  //   })
+  // };
+  // function slidefunc(start,end,idx){
+  //   $('.taste li').eq(idx).addClass('on').children('img').css({
+  //     'display':'block',
+  //     'left':start
+  //   }).animate({
+  //     'left':end
+  //   }).parent().siblings().removeClass('on')
+  // };
+  // $('.taste .set3next').on({
+  //   'click':function(){
+  //     set3slide('0','-100%',set3Idx)
+  //     set3Idx ++
+  //     set3slide('100%',0,set3Idx)
+  //     if(set3Idx == $('.slide li').length){
+  //       set3Idx = 0
+  //       slidefunc('100%','0',set3Idx)
+  //     }
+  //   }
+  // });
+  // $('.taste .set3prev').on({
+  //   'click':function(){
+  //     slidefunc('0','100%',set3Idx)
+  //     set3Idx --
+  //     slidefunc('-100%','0',set3Idx)
+  //     if(set3Idx < 0){
+  //       set3Idx = $('.slidebanner li').length -1
+  //       slidefunc('-100%','0',set3Idx)
+  //     }
+  //   }
+  // });
 
 
 });

@@ -13,6 +13,7 @@ body {
   height: 6450px;
   font-family: 'Noto Sans KR', Sans-serif, Helvetica;
   background: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 }
 ul,
 ol,
@@ -35,6 +36,7 @@ a {
 }
 .wrapper .wrap {
   height: 100%;
+  overflow: hidden;
 }
 header {
   position: fixed;

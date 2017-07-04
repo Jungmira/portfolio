@@ -195,13 +195,13 @@ section p {
   bottom: 0;
 }
 #set2 .bgimage {
-  background: url('../images/untitled-1.jpg') center no-repeat fixed;
+  background: url('../images/fruit.jpg') center no-repeat fixed;
 }
 #set3 .bgimage {
   background: url('../images/womans.jpg') center no-repeat fixed;
 }
 #set4 .bgimage {
-  background: url('../images/cupcake_rabbit.jpg') center no-repeat fixed;
+  background: url('../images/fruit.jpg') center no-repeat fixed;
 }
 #set4 .mapiframe iframe {
   width: 100%;
